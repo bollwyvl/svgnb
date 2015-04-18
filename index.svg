@@ -1,113 +1,45 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1920"
-   height="1080"
-   viewBox="0 0 1920 1080"
-   id="svg2"
-   version="1.1"
-   inkscape:version="0.91 r13725"
-   shape-rendering="crispEdges"
-   sodipodi:docname="index.svg">
-  <title
-     id="title4216">svg.nb</title>
-  <defs
-     id="defs4">
-
+<?xml version="1.0" encoding="utf-8" ?>
+<svg id="svg2" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1920" height="1080" viewbox="0 0 1920 1080" version="1.1" inkscape:version="0.91 r13725" shape-rendering="crispEdges" sodipodi:docname="index.svg">
+  <title id="title4216">svg.nb</title>
+  <defs id="defs4">
     <style type="text/css"><![CDATA[ @import url("./index.css"); ]]></style>
   </defs>
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#000000"
-     bordercolor="#ff0000"
-     borderopacity="0.39215686"
-     inkscape:pageopacity="1"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.50000001"
-     inkscape:cx="1110.3115"
-     inkscape:cy="747.70429"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="true"
-     units="px"
-     inkscape:window-width="1920"
-     inkscape:window-height="1014"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
-     inkscape:window-maximized="1"
-     guidehicolor="#f5ff00"
-     guidehiopacity="0.49803922"
-     guidecolor="#00ff16"
-     guideopacity="0.49803922"
-     borderlayer="true">
-    <inkscape:grid
-       type="xygrid"
-       id="grid4212"
-       empcolor="#ff0010"
-       empopacity="0.25098039"
-       color="#ffe400"
-       opacity="0.72941176"
-       spacingx="1"
-       spacingy="1"
-       empspacing="5" />
+  <sodipodi:namedview id="base" pagecolor="#000000" bordercolor="#ff0000" borderopacity="0.39215686" inkscape:pageopacity="1" inkscape:pageshadow="2" inkscape:zoom="0.50000001" inkscape:cx="1110.3115" inkscape:cy="747.70429" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="true" units="px" inkscape:window-width="1920" inkscape:window-height="1014" inkscape:window-x="0" inkscape:window-y="27" inkscape:window-maximized="1" guidehicolor="#f5ff00" guidehiopacity="0.49803922" guidecolor="#00ff16" guideopacity="0.49803922" borderlayer="true">
+    <inkscape:grid id="grid4212" type="xygrid" empcolor="#ff0010" empopacity="0.25098039" color="#ffe400" opacity="0.72941176" spacingx="1" spacingy="1" empspacing="5"></inkscape:grid>
   </sodipodi:namedview>
-  <metadata
-     id="metadata7">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
+  <metadata id="metadata7">
+    <rdf:rdf>
+      <cc:work rdf:about="">
         <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title>svg.nb</dc:title>
-        <dc:date>2015-04-17</dc:date>
-        <dc:creator>
-          <cc:Agent>
-            <dc:title>Nicholas Bollweg</dc:title>
-          </cc:Agent>
-        </dc:creator>
-        <dc:language>en</dc:language>
-        <dc:subject>
-          <rdf:Bag>
-            <rdf:li>notebook</rdf:li>
-            <rdf:li>svg</rdf:li>
-          </rdf:Bag>
-        </dc:subject>
-        <cc:license
-           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
-      </cc:Work>
-      <cc:License
-         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Reproduction" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Distribution" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
-      </cc:License>
-    </rdf:RDF>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage">
+          <dc:title>svg.nb</dc:title>
+          <dc:date>2015-04-17</dc:date>
+          <dc:creator>
+            <cc:agent>
+              <dc:title>Nicholas Bollweg</dc:title>
+            </cc:agent>
+          </dc:creator>
+          <dc:language>en</dc:language>
+          <dc:subject>
+            <rdf:bag>
+              <rdf:li>notebook</rdf:li>
+              <rdf:li>svg</rdf:li>
+            </rdf:bag>
+          </dc:subject>
+          <cc:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"></cc:license>
+        </dc:type>
+      </cc:work>
+      <cc:license rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction">
+          <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution">
+            <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"></cc:permits>
+          </cc:permits>
+        </cc:permits>
+      </cc:license>
+    </rdf:rdf>
   </metadata>
-  <g
-     inkscape:label="cells"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,27.637839)" />
-  <script
-     xlink:href="./reload.js"
-     id="reload" />
-  <script
-     xlink:href="./lib/requirejs/require.js"
-     id="require" />
-  <script
-     xlink:href="./index.js"
-     id="index" />
+  <g id="layer1" inkscape:label="cells" inkscape:groupmode="layer" transform="translate(0,27.637839)"></g>
+  <script id="reload" xlink:href="./reload.js"></script>
+  <script id="require" xlink:href="./lib/requirejs/require.js"></script>
+  <script id="index" xlink:href="./index.js"></script>
 </svg>
