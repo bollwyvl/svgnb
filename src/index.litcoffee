@@ -14,11 +14,21 @@ When it is compiled, it is loaded into the [nbv SVG](./index.svg).
   http://coffeescript.org/extras/coffee-script.js
 
 # On Require
-We use requirejs to maintain some level of compatibility with the HTML5 Notebook
+We use requirejs to maintain some level of compatibility with the HTML5
+Notebook.
+
+> Perhaps ES2015 would do this, better? Asynchronous loads are important...
 
     require {
+
+`xhtml` ensures that the scripts are added "correctly", which means as
+`xhtml:script`, as opposed to the `svg:script` that [Inkscape][] speaks.
+
+> TODO: is it worth trying to get this to be SVG native?
+
       xhtml: true
-    }, [
+    },
+    [
       "lib/d3/d3"
       "lib/baobab/build/baobab.min"
       "lib/codemirror/lib/codemirror"
@@ -45,7 +55,7 @@ The layer is a powerful concept provided by Inkscape.
             .filter ->
               label is (d3.select(@).attr ":inkscape:label")
 
-## It makes [SVG][]...
+## [SVG][] selectors
 
         initSvg: ->
           @$svg = d3.select "svg"
@@ -53,6 +63,7 @@ The layer is a powerful concept provided by Inkscape.
           @$cells = @layer "cells"
           @$cell = @$cells.selectAll ".cell"
 
+          """
           @$view = @$svg.insert "g", ":first-child"
             .classed nbv_base: true
             .call (base) =>
@@ -62,6 +73,7 @@ The layer is a powerful concept provided by Inkscape.
                   height: @$base.attr ":inkscape:window-height"
                 .style
                   fill: @$base.attr "pagecolor"
+          """
           @
 
 ## Data
@@ -95,8 +107,9 @@ Cursors provide the means of reacting to data changes.
                     height: 350
                   .append "xhtml:body"
                   .append "xhtml:div"
-                  .each ->
-                    new CodeMirror @
+                  .each (d) ->
+                    cm  = new CodeMirror @
+                    cm.setValue d.source.join "\n"
           @
 
         log: (args...) ->

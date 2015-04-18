@@ -23,18 +23,7 @@
         this.$base = this.$svg.select("#base");
         this.$cells = this.layer("cells");
         this.$cell = this.$cells.selectAll(".cell");
-        this.$view = this.$svg.insert("g", ":first-child").classed({
-          nbv_base: true
-        }).call((function(_this) {
-          return function(base) {
-            return base.append("rect").attr({
-              width: _this.$base.attr(":inkscape:window-width"),
-              height: _this.$base.attr(":inkscape:window-height")
-            }).style({
-              fill: _this.$base.attr("pagecolor")
-            });
-          };
-        })(this));
+        "@$view = @$svg.insert \"g\", \":first-child\"\n  .classed nbv_base: true\n  .call (base) =>\n    base.append \"rect\"\n      .attr\n        width: @$base.attr \":inkscape:window-width\"\n        height: @$base.attr \":inkscape:window-height\"\n      .style\n        fill: @$base.attr \"pagecolor\"";
         return this;
       };
 
@@ -60,8 +49,10 @@
           }).append("foreignObject").attr({
             width: 500,
             height: 350
-          }).append("xhtml:body").append("xhtml:div").each(function() {
-            return new CodeMirror(this);
+          }).append("xhtml:body").append("xhtml:div").each(function(d) {
+            var cm;
+            cm = new CodeMirror(this);
+            return cm.setValue(d.source.join("\n"));
           });
         });
         return this;
