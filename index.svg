@@ -102,11 +102,8 @@
      xlink:href="./reload.js"
      id="reload" />
   <script
-     xlink:href="https://cdn.jsdelivr.net/g/d3js"
-     id="dependencies" />
-  <script
-     xlink:href="https://cdn.rawgit.com/Yomguithereal/baobab/1.0.0-rc1/build/baobab.min.js"
-     id="baobab" />
+     xlink:href="./lib/requirejs/require.js"
+     id="require" />
   <script
      xlink:href="./index.js"
      id="index" />
