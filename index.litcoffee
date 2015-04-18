@@ -1,10 +1,12 @@
+```
       #
 # ##  ###  #   #
 #   # #  #  # #
 #   # ###    #
+```
 
 An implementation of the Jupyter Notebook in reactive vector
-graphics. This document is [literate CofeeScript][].
+graphics. This document is [literate CofeeScript][litcoffee].
 
 When it is compiled, it is loaded into the [nbv SVG](./index.svg).
 
@@ -89,12 +91,12 @@ the XML world, but also relevant to [JSON-LD][].
 
     ns = (prefix, iri) ->
 
-### [`d3`][d3]
+### Namespace user: [`d3`][d3]
 [d3][] uses namespaces to manipulate different kinds of [DOM][].
 
       d3.ns[prefix] = iri
 
-### [`inkscape`][inkscape]
+### Namespace: [`inkscape`][inkscape]
 Inkscape is the spiritual predecessor of [nbv][].
 
     ns "inkscape", "http://www.inkscape.org/namespaces/inkscape"
@@ -102,11 +104,18 @@ Inkscape is the spiritual predecessor of [nbv][].
 
 # Load the Notebook
 
-The Jupyter Notebook is the data model for `nbv`. This should
-likely move to the calling SVG.
+The [Jupyter Notebook][notebook] is the data model for `nbv`.
+
+> This should likely move to the calling SVG.
 
     d3.json "index.ipynb", (nb) ->
       @nbv = new Notebook nb
 
-[litcoffee]: http://coffescript.org/#literate
+# References
+[nbv]: http://bollwyvl.github.io/nbv
+[d3]: http://d3js.org
 [Baobab]: http://github.com/Yomguithereal/baobab
+[Inkscape]: https://inkscape.org
+[litcoffee]: http://coffescript.org/#literate
+[notebook]: http://github.com/jupyter/jupyter_notebook
+[SVG]: https://github.com/mbostock/d3/wiki/SVG-Shapes
