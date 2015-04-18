@@ -21,7 +21,10 @@
   <title
      id="title4216">svg.nb</title>
   <defs
-     id="defs4" />
+     id="defs4">
+
+    <style type="text/css"><![CDATA[ @import url("./index.css"); ]]></style>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#000000"

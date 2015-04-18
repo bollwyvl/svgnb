@@ -4,8 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stylus": "./node_modules/.bin/stylus -o ./dist -w ./src/*.styl",
+    "coffee": "./node_modules/.bin/coffee -o ./dist -wcm ./src/*.litcoffee",
+    "serve": "./node_modules/.bin/live-server dist",
+    "live": "./bin/npm_watch_multiple.sh jade stylus coffee serve"
   },
   "author": "",
-  "license": "BSD"
+  "license": "BSD",
+  "devDependencies": {
+    "coffee-script": "~1.9.2",
+    "stylus": "~0.50.0",
+    "bower": "~1.4.1",
+    "live-server": "~0.7.1"
+  }
 }

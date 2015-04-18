@@ -21,7 +21,8 @@ We use requirejs to maintain some level of compatibility with the HTML5 Notebook
     }, [
       "lib/d3/d3"
       "lib/baobab/build/baobab.min"
-    ], (d3, Baobab) ->
+      "lib/codemirror/lib/codemirror"
+    ], (d3, Baobab, CodeMirror) ->
 
 # The Notebook Class
 
@@ -52,7 +53,7 @@ The layer is a powerful concept provided by Inkscape.
           @$cells = @layer "cells"
           @$cell = @$cells.selectAll ".cell"
 
-          @$view = @$svg.insert "g"
+          @$view = @$svg.insert "g", ":first-child"
             .classed nbv_base: true
             .call (base) =>
               base.append "rect"
@@ -88,6 +89,14 @@ Cursors provide the means of reacting to data changes.
               cell.enter()
                 .append "g"
                   .classed nbv_cell: true
+                  .append "foreignObject"
+                  .attr
+                    width: 500
+                    height: 350
+                  .append "xhtml:body"
+                  .append "xhtml:div"
+                  .each ->
+                    new CodeMirror @
           @
 
         log: (args...) ->
