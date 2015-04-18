@@ -51,7 +51,9 @@
             height: 350
           }).append("xhtml:body").append("xhtml:div").each(function(d) {
             var cm;
-            cm = new CodeMirror(this);
+            cm = new CodeMirror(this, {
+              theme: "elegant"
+            });
             return cm.setValue(d.source.join("\n"));
           });
         });
