@@ -107,8 +107,4 @@
   <script
      xlink:href="./index.js"
      id="index" />
-  <script>
-    debugger;
-    console.log(d3);
-  </script>
 </svg>

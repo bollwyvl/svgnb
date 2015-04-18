@@ -18,8 +18,9 @@
   })(Baobab);
 
   d3.json("index.ipynb", function(nb) {
-    var NB;
-    return NB = new Notebook(nb);
+    return window.NB = new Notebook(nb);
   });
 
 }).call(this);
+
+//# sourceMappingURL=index.js.map
