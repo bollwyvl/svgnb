@@ -108,7 +108,9 @@ Cursors provide the means of reacting to data changes.
                   .append "xhtml:body"
                   .append "xhtml:div"
                   .each (d) ->
-                    cm  = new CodeMirror @
+                    cm  = new CodeMirror @,
+                      theme: "elegant"
+
                     cm.setValue d.source.join "\n"
           @
 
