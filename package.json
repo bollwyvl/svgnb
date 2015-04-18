@@ -4,18 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "stylus": "./node_modules/.bin/stylus -o ./dist -w ./src/*.styl",
     "coffee": "./node_modules/.bin/coffee -o ./dist -wcm ./src/*.litcoffee",
+    "jade": "./node_modules/.bin/jade -o ./dist -w ./src/*.jade --path ./src -E svg -P",
+    "live": "./bin/npm_watch_multiple.sh jade stylus coffee serve",
     "serve": "./node_modules/.bin/live-server .",
-    "live": "./bin/npm_watch_multiple.sh jade stylus coffee serve"
+    "stylus": "./node_modules/.bin/stylus -o ./dist -w ./src/*.styl",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "BSD",
   "devDependencies": {
-    "coffee-script": "~1.9.2",
-    "stylus": "~0.50.0",
     "bower": "~1.4.1",
-    "live-server": "~0.7.1"
+    "coffee-script": "~1.9.2",
+    "jade": "~1.9.2",
+    "live-server": "~0.7.1",
+    "stylus": "~0.50.0"
   }
 }
